@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:food_users_app/global/global.dart';
 import 'package:provider/provider.dart';
-
-import 'cart_Item_counter.dart';
+import 'package:food_users_app/assistantMethods/cart_Item_counter.dart';
+import 'package:food_users_app/splashScreen/splash_screen.dart';
 
 
 

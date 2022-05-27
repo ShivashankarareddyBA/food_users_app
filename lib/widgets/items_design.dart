@@ -39,13 +39,13 @@ class _ItemsDesignWidgetState extends State<ItemsDesignWidget> {
                 color: Colors.grey[300],
               ),
               Image.network(
-                widget.model!.thumbnailUrl?? "",
+                widget.model!.thumbnailUrl!,
                 height: 220.0,
                 fit: BoxFit.cover,
               ),
               const SizedBox(height: 1.0,),
               Text(
-                widget.model!.title ?? "",
+                widget.model!.title!,
                 style: const TextStyle(
                   color: Colors.cyan,
                   fontSize: 20,
@@ -53,7 +53,7 @@ class _ItemsDesignWidgetState extends State<ItemsDesignWidget> {
                 ),
               ),
               Text(
-                widget.model!.shortInfo ?? "",
+                widget.model!.shortInfo!,
                 style: const TextStyle(
                   color: Colors.grey,
                   fontSize: 12,

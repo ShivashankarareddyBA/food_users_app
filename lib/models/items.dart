@@ -3,7 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class Items
 {
   String? menuID;
-  String? sellersUID;
+  String? sellerUID;
   String? itemID;
   String? title;
   String? shortInfo;
@@ -15,7 +15,7 @@ class Items
 
   Items({
     this.menuID,
-    this.sellersUID,
+    this.sellerUID,
     this.itemID,
     this.title,
     this.shortInfo,
@@ -29,7 +29,7 @@ class Items
   Items.fromJson(Map<String, dynamic> json)
   {
     menuID = json['menuID'];
-    sellersUID = json['sellersUID'];
+    sellerUID = json['sellerUID'];
     itemID = json['itemID'];
     title = json['title'];
     shortInfo = json['shortInfo'];
@@ -44,7 +44,7 @@ class Items
   {
     final Map<String, dynamic> data = Map<String, dynamic>();
     data['menuID'] = menuID;
-    data['sellersUID'] = sellersUID;
+    data['sellerUID'] = sellerUID;
     data['itemID'] = itemID;
     data['title'] = title;
     data['shortInfo'] = shortInfo;
