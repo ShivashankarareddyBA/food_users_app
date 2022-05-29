@@ -32,7 +32,7 @@ class _ItemDetailsScreenState extends State<ItemDetailsScreen>
           Image.network(widget.model!.thumbnailUrl.toString()),
 
           Padding(
-            padding: const EdgeInsets.all(18.0),
+            padding: const EdgeInsets.all(8.0),
             child: NumberInputPrefabbed.roundedButtons(
               controller: counterTextEditingController,
               incDecBgColor: Colors.amber,
@@ -64,11 +64,11 @@ class _ItemDetailsScreenState extends State<ItemDetailsScreen>
             padding: const EdgeInsets.all(8.0),
             child: Text(
             "₹ " + widget.model!.price.toString(),
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
             ),
           ),
 
-          const SizedBox(height: 10,),
+          const SizedBox(height: 8,),
 
           Center(
             child: InkWell(
@@ -95,8 +95,8 @@ class _ItemDetailsScreenState extends State<ItemDetailsScreen>
                       tileMode: TileMode.clamp,
                     )
                 ),
-                width: MediaQuery.of(context).size.width - 13,
-                height: 50,
+                width: MediaQuery.of(context).size.width - 15,
+                height: 30,
                 child: const Center(
                   child: Text(
                     "Add to Cart",

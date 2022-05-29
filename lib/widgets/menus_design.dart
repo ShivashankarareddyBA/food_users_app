@@ -43,7 +43,7 @@ class _MenusDesignWidgetState extends State<MenusDesignWidget> {
                 color: Colors.grey[300],
               ),
               Image.network(
-                widget.model!.thumbnailUrl?? "",
+                widget.model!.thumbnailUrl!,
                 height: 220.0,
                 fit: BoxFit.cover,
               ),
@@ -51,7 +51,7 @@ class _MenusDesignWidgetState extends State<MenusDesignWidget> {
                 height: 1.0,
               ),
               Text(
-                widget.model!.menuTitle?? "",
+                widget.model!.menuTitle!,
                 style: const TextStyle(
                   color: Colors.cyan,
                   fontSize: 20,
@@ -59,7 +59,7 @@ class _MenusDesignWidgetState extends State<MenusDesignWidget> {
                 ),
               ),
               Text(
-                widget.model!.menuInfo ?? "",
+                widget.model!.menuInfo?? "",
                 style: const TextStyle(
                   color: Colors.grey,
                   fontSize: 12,

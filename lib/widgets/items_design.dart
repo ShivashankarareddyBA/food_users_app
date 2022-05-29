@@ -29,7 +29,7 @@ class _ItemsDesignWidgetState extends State<ItemsDesignWidget> {
       child: Padding(
         padding: const EdgeInsets.all(5.0),
         child: Container(
-          height: 280,
+          height: 150,
           width: MediaQuery.of(context).size.width,
           child: Column(
             children: [
@@ -40,7 +40,7 @@ class _ItemsDesignWidgetState extends State<ItemsDesignWidget> {
               ),
               Image.network(
                 widget.model!.thumbnailUrl!,
-                height: 220.0,
+                height: 150.0,
                 fit: BoxFit.cover,
               ),
               const SizedBox(height: 1.0,),

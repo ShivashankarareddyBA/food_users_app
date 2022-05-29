@@ -25,14 +25,14 @@ class _ItemsScreenState extends State<ItemsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(sellerUID: widget.model!.sellersUID),
+      appBar: MyAppBar(sellerUID: widget.model!.sellerUID),
       body: CustomScrollView(
         slivers: [
           SliverPersistentHeader(pinned: true, delegate: TextWidgetHeader(title: "Items of " + widget.model!.menuTitle.toString())),
           StreamBuilder<QuerySnapshot>(
             stream: FirebaseFirestore.instance
                 .collection("sellers")
-                .doc(widget.model!.sellersUID)
+                .doc(widget.model!.sellerUID)
                 .collection("menus")
                 .doc(widget.model!.menuID)
                 .collection("items")
