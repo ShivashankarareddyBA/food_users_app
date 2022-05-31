@@ -6,6 +6,7 @@ import 'package:food_users_app/models/items.dart';
 
 class OrderCard extends StatelessWidget
 {
+  //order card parameters
   final int? itemCount;
   final List<DocumentSnapshot>? data;
   final String? orderID;

@@ -33,7 +33,7 @@ class _MenusDesignWidgetState extends State<MenusDesignWidget> {
       child: Padding(
         padding: const EdgeInsets.all(5.0),
         child: Container(
-          height: 280,
+          height: 220.0,
           width: MediaQuery.of(context).size.width,
           child: Column(
             children: [
@@ -44,7 +44,7 @@ class _MenusDesignWidgetState extends State<MenusDesignWidget> {
               ),
               Image.network(
                 widget.model!.thumbnailUrl!,
-                height: 220.0,
+                height: 170.0,
                 fit: BoxFit.cover,
               ),
               const SizedBox(

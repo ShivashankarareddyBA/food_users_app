@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 class SimpleAppBar extends StatelessWidget with PreferredSizeWidget
 {
+  String? title;
   final PreferredSizeWidget? bottom;
 
   SimpleAppBar({this.bottom, title});
@@ -31,9 +32,9 @@ class SimpleAppBar extends StatelessWidget with PreferredSizeWidget
         ),
       ),
       centerTitle: true,
-      title: const Text(
-        "yesFood",
-        style: TextStyle(fontSize: 45.0, letterSpacing: 3, color: Colors.white, fontFamily: "Signatra"),
+      title:  Text(
+        title!,
+        style: const TextStyle(fontSize: 45.0, letterSpacing: 3, color: Colors.white, fontFamily: "Signatra"),
       ),
     );
   }

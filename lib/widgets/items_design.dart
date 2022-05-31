@@ -29,7 +29,7 @@ class _ItemsDesignWidgetState extends State<ItemsDesignWidget> {
       child: Padding(
         padding: const EdgeInsets.all(5.0),
         child: Container(
-          height: 150,
+          height: 230,
           width: MediaQuery.of(context).size.width,
           child: Column(
             children: [
