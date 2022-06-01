@@ -20,14 +20,14 @@ class _MyOrdersScreenState extends State<MyOrdersScreen>
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: SimpleAppBar(title: "My Orders",),
+        appBar: SimpleAppBar(title: "My Orders"),
         body: StreamBuilder<QuerySnapshot>(
           stream: FirebaseFirestore.instance
               .collection("users")
               .doc(sharedPreferences!.getString("uid"))
               .collection("orders")
               .where("status", isEqualTo: "normal")
-              .orderBy("orderTime", descending: true)
+              .orderBy("orderTime", descending: false)
               .snapshots(),
           builder: (c, snapshot)
           {

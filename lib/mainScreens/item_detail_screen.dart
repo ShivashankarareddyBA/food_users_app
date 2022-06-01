@@ -68,7 +68,7 @@ class _ItemDetailsScreenState extends State<ItemDetailsScreen>
             ),
           ),
 
-          const SizedBox(height: 8,),
+          const SizedBox(height: 8),
 
           Center(
             child: InkWell(
@@ -95,8 +95,8 @@ class _ItemDetailsScreenState extends State<ItemDetailsScreen>
                       tileMode: TileMode.clamp,
                     )
                 ),
-                width: MediaQuery.of(context).size.width - 15,
-                height: 30,
+                width: MediaQuery.of(context).size.width - 13,
+                height: 20,
                 child: const Center(
                   child: Text(
                     "Add to Cart",

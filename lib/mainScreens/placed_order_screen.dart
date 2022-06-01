@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -37,7 +35,7 @@ class _PlacedOrderScreenState extends State<PlacedOrderScreen> {
                  "productIDs": sharedPreferences!.getStringList("userCart"),
                  "paymentDetails": "Cash on delivery",
                  "orderTime": orderId,
-                 "isSuccess": "isSuccess",
+                 "isSuccess": true,
                  "sellerUID": widget.sellerUID,
                  "riderUID": "",
                  "status": "normal",
@@ -54,7 +52,7 @@ class _PlacedOrderScreenState extends State<PlacedOrderScreen> {
              "productIDs": sharedPreferences!.getStringList("userCart"),
              "paymentDetails": "Cash on delivery",
              "orderTime": orderId,
-             "isSuccess": "isSuccess",
+             "isSuccess": true,
              "sellerUID": widget.sellerUID,
              "riderUID": "",
              "status": "normal",
