@@ -105,7 +105,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
                             return snapshot.hasData
                                 ? ShipmentAddressDesign(
                                     model: Address.fromJson(
-                                      snapshot.data!.data()! as Map<String, dynamic>
+                                        snapshot.data!.data()! as Map<String, dynamic>
                                     ),
                                   )
                                 : Center(child: circularProgress(),);

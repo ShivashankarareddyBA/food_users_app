@@ -193,13 +193,13 @@ class _CartScreenState extends State<CartScreen>
             stream: FirebaseFirestore.instance
                 .collection("items")
                 .where("itemID", whereIn: separateItemIDs())
-                .orderBy("publishedDate", descending: false)
+                .orderBy("publishedDate", descending: true)
                 .snapshots(),
             builder: (context, snapshot)
             {
               return !snapshot.hasData
                   ? SliverToBoxAdapter(child: Center(child: circularProgress(),),)
-                  : snapshot.data?.docs.length == 0
+                  : snapshot.data!.docs.length == 0
                   ? //startBuildingCart()
               Container()
                   : SliverList(
@@ -221,7 +221,7 @@ class _CartScreenState extends State<CartScreen>
 
                   if(snapshot.data!.docs.length - 1 == index)
                   {
-                    WidgetsBinding.instance!.addPostFrameCallback((timeStamp)
+                    WidgetsBinding.instance.addPostFrameCallback((timeStamp)
                     {
                       Provider.of<TotalAmount>(context, listen: false).displayTotalAmount(totalAmount.toDouble());
                     });

@@ -36,7 +36,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
                 .collection("menus")
                 .doc(widget.model!.menuID)
                 .collection("items")
-                .orderBy("publishedDate", descending: false)
+                .orderBy("publishedDate", descending: true)
                 .snapshots(),
             builder: (context, snapshot)
             {
