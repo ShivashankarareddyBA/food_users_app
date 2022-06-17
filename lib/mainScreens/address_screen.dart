@@ -81,7 +81,7 @@ class _AddressScreenState extends State<AddressScreen>
                               return AddressDesign(
                                 currentIndex: address.count,
                                 value: index,
-                                addressID: snapshot.data!.docs[index].id,
+                                addressId: snapshot.data!.docs[index].id,
                                 totalAmount: widget.totalAmount,
                                 sellerUID: widget.sellerUID,
                                 model: Address.fromJson(

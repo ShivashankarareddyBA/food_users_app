@@ -6,7 +6,7 @@ class ShipmentAddressDesign extends StatelessWidget
 {
   final Address? model;
 
-  ShipmentAddressDesign({this.model});
+   ShipmentAddressDesign({this.model});
 
 
 

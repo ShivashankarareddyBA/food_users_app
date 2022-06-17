@@ -10,7 +10,7 @@ class AddressDesign extends StatefulWidget
   final Address? model;
   final int? currentIndex;
   final int? value;
-  final String? addressID;
+  final String? addressId;
   final double? totalAmount;
   final String? sellerUID;
 
@@ -18,7 +18,7 @@ class AddressDesign extends StatefulWidget
     this.model,
     this.currentIndex,
     this.value,
-    this.addressID,
+    this.addressId,
     this.totalAmount,
     this.sellerUID,
   });
@@ -154,7 +154,7 @@ class _AddressDesignState extends State<AddressDesign>
                         Navigator.push(
                             context, MaterialPageRoute(
                             builder: (c)=> PlacedOrderScreen(
-                              addressID: widget.addressID,
+                              addressID: widget.addressId,
                               totalAmount: widget.totalAmount,
                               sellerUID: widget.sellerUID,
                             )
